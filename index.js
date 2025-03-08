@@ -14,9 +14,9 @@ app.post('/gocardless-webhook', async (req, res) => {
 
     // Requête vers API Kartra pour donner accès à un produit
     await axios.post('https://api.kartra.com/grant-access', {
-      api_key: 'VOTRE_CLE_API_KARTRA',
+      api_key: 'jadRfYSe',
       email: payment.customer.email,
-      product_id: 'ID_PRODUIT_KARTRA'
+      product_id: '518624'
     });
 
     res.status(200).send('Accès accordé');
